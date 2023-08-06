@@ -9,9 +9,12 @@ const slideBarSlice=createSlice({
     reducers:{
         toggle:(state)=>{
             state.value=!state.value
+        },
+        minimize:(state)=>{
+            state.value=false
         }
     }
 })
 
 export default slideBarSlice.reducer;
-export const {toggle}=slideBarSlice.actions;
+export const {toggle,minimize}=slideBarSlice.actions;
