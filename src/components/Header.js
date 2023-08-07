@@ -77,7 +77,7 @@ const Header = () => {
         <div className="col-span-8 w-[40%] text-center flex items-center">
             <div className="flex items-center w-[100%]">
             <div className="flex flex-col w-full">
-            <input className='border border-solid border-gray-300 px-4 py-2 w-[100%] rounded-l-full' type="text" value={searchText} onChange={(e)=>setSearchText(e.target.value)} onFocus={()=>{setSearchResultStatus(navStatus?false:true)}} onBlur={()=>{setSearchResultStatus(true)}}/>
+            <input className='border border-solid border-gray-300 px-4 py-2 w-[100%] rounded-l-full' type="text" value={searchText} onChange={(e)=>setSearchText(e.target.value)} onFocus={()=>{setSearchResultStatus(navStatus?false:true)}} onBlur={()=>{setSearchResultStatus(false)}}/>
             {(searchResultStatus&&searchResults)?<div className="bg-white p-4 mt-[2.6rem] shadow-lg border-x border-b border-solid border-gray-300 w-[600px] rounded-lg fixed z-50">
                 <ul className='text-left'>
                     {
