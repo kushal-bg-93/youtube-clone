@@ -24,7 +24,7 @@ const Header = () => {
     // console.log('This is auto suggestion>>',autoSuggestionResults)
 
     useEffect(()=>{
-        let timer=setTimeout(()=>{getAutoSuggestion()},200)
+        let timer=setTimeout(()=>{getAutoSuggestion()},400)
         
         return ()=>clearTimeout(timer)
     },[searchText,searchResults,autoSuggestionResults])
