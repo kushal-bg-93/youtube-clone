@@ -36,6 +36,10 @@ export const appRouter=createBrowserRouter([
       {
         path:"/search",
         element:<SearchPage/>
+      },
+      {
+        path:"/header",
+        element:<Header/>
       }
     ]
   },
@@ -51,7 +55,7 @@ function App() {
   return (
     <Provider store={store}>
       <div>
-      <Header/>
+      
       <RouterProvider router={appRouter}/>
     </div>
     </Provider>

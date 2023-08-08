@@ -9,6 +9,7 @@ import { toggle } from '../utils/slideBarSlice';
 import App from '../App';
 import { YOUTUBE_AUTO_SUGGEST } from '../utils/constants';
 import { setAutoSuggestions } from '../utils/autoSuggestionSlice';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -70,7 +71,7 @@ const Header = () => {
 
             <AiOutlineMenu className='text-2xl font-thin cursor-pointer'/>
             </div>
-                <a href="/"><img className='h-14 ml-5 cursor-pointer' src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo.png" alt="logo" /></a>
+                <Link to="/"><img className='h-14 ml-5 cursor-pointer' src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo.png" alt="logo" /></Link>
                
         </div>
 
@@ -102,9 +103,9 @@ const Header = () => {
             </div>:""}
 
             </div>
-            <a href={"/search?searchQuery="+searchText}><button className='py-2 px-5 hover:bg-gray-300 rounded-r-full border border-solid border-gray-300 bg-gray-100'>
+            <Link to={"/search?searchQuery="+searchText}><button className='py-2 px-5 hover:bg-gray-300 rounded-r-full border border-solid border-gray-300 bg-gray-100'>
                 <CiSearch className='text-center font-extralight text-gray-600 text-2xl'/>
-            </button></a>
+            </button></Link>
             </div>
             <div className="rounded-full bg-gray-100 p-3 cursor-pointer hover:bg-gray-300 ml-4">
 
