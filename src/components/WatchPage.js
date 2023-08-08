@@ -59,7 +59,7 @@ const WatchPage = () => {
     let data=await fetch(url)
     data=await data.json()
     setFilteredListNextPageToken(data?.nextPageToken)
-    console.log('This is filtered result',data)
+    // console.log('This is filtered result',data)
     setFilteredVideoList(data?.items)
   }
 

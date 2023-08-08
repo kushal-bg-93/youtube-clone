@@ -7,8 +7,8 @@ import { YOUTUBE_VIDEO_STATISTICS } from '../utils/constants'
 import videoCardConfig from '../utils/videoCardConfig'
 
 const CommonVideoCard = ({cardData,videoId}) => {
-    console.log('This is cardData>>',cardData)
-    console.log('This is videoId>>',videoId)
+    // console.log('This is cardData>>',cardData)
+    // console.log('This is videoId>>',videoId)
     const [videoStatistics,setVideoStatistics]=useState()
     useEffect(()=>{
         getVideoStatistics()

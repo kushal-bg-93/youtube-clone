@@ -38,7 +38,7 @@ const Header = () => {
                 
                 let data=await fetch(YOUTUBE_AUTO_SUGGEST+searchText)
                 data=await data.json();
-                console.log('This is autosuggest data>>',data)
+                // console.log('This is autosuggest data>>',data)
                 if(data?.nextPageToken){
                     setNextPageToken(data?.nextPageToken)
                 }
@@ -47,7 +47,7 @@ const Header = () => {
                 }
                 searchRes[searchText]=data?.items
                 dispatch(setAutoSuggestions(searchRes))
-                console.log('This is autosuggestion>>>',data)
+                // console.log('This is autosuggestion>>>',data)
             }
             setSearchResults(autoSuggestionResults[searchText])
 
