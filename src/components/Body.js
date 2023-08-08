@@ -12,7 +12,7 @@ const Body = () => {
     <>
     <Header/>
     <div className='flex'>
-        <div className="sticky">{slideBarStatus.value?<Sidebar/>:<Sidebar minimisedSidebar={true}/>}</div>
+        <div className="">{slideBarStatus.value?<Sidebar/>:<Sidebar minimisedSidebar={true}/>}</div>
         <Outlet/>
         {/* <MainContainer/> */}
         
