@@ -27,7 +27,7 @@ const Header = () => {
         let timer=setTimeout(()=>{getAutoSuggestion()},200)
         
         return ()=>clearTimeout(timer)
-    },[searchText,searchResults])
+    },[searchText,searchResults,autoSuggestionResults])
 
     async function getAutoSuggestion(){
         if(searchText){
