@@ -59,7 +59,7 @@ function App() {
   
   useEffect(() => {
     console.log('This is window innerwidth>>>',window.innerWidth)
-    if(window.innerWidth <= 600) {
+    if(window.innerWidth <= 1200) {
       console.log("Entered innerwidth")
       setShowMobileWarning(true)
     } 
