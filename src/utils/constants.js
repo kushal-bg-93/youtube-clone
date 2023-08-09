@@ -1,4 +1,4 @@
-const API_KEY="AIzaSyDVH5uuB4EOTj6oyUON-5hWPFn83Y24OxA"
+const API_KEY="AIzaSyAhaDLW-I1dUZjnQ6KDcjc36mzxWdJN8Ns"
 
 
 export const YOUTUBE_VIDEO_API=`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&maxResults=12&key=${API_KEY}`
