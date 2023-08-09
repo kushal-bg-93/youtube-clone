@@ -87,11 +87,11 @@ const Header = () => {
                         // console.log('This is autoSuggestion results>>>',autoSuggestionResults)
                     searchResults.map(suggestion=>{
                         return (
-                        <a href={'/watch?v='+suggestion?.id?.videoId}>    
+                        <Link to={'/watch?v='+suggestion?.id?.videoId}>    
                         <div className="flex mt-4 items-center gap-4">
                             <img src={suggestion?.snippet?.thumbnails?.default?.url} className="h-[50px] w-[70px] object-cover" alt="" />
                     <li>{((suggestion?.snippet?.title.length)>60)?suggestion?.snippet?.title.slice(0,59)+'...':suggestion?.snippet?.title}</li>
-                    </div></a>
+                    </div></Link>
                         )
                     })
                     }
