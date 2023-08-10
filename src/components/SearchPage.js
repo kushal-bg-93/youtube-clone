@@ -15,7 +15,7 @@ const SearchPage = () => {
 
     useEffect(()=>{
         getSearchResult();
-    },[])
+    },[searchParams])
 
     async function getSearchResult(){
         let data=await fetch(YOUTUBE_FILTER_LIST+`&q=${searchParams.get('searchQuery')}`)
