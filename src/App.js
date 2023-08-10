@@ -66,8 +66,8 @@ function App() {
   }, [window.innerWidth])
 
   if(showMobileWarning==true) return (
-    <div className='flex items-center justify-center'>
-    <h1>Currently the application can only be viewed in desktop</h1>
+    <div className='flex items-center justify-center h-[100vh] w-[100vw]'>
+    <h1 className='bg-red-600 text-white p-5 rounded-lg'>Currently the application can only be viewed in PC's</h1>
     </div>
     )
 
